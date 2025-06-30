@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #444;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+
+    .about,
+    .contact {
+      font-size: 1.1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abhishek Darandale</h1>
+    <p>Passionate Web Developer | Student | Coder</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section about" id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Abhishek, a BCA student and web developer passionate about building full-stack web apps.
+        I love to code, learn new technologies, and build real-world solutions.
+      </p>
+    </section>
+
+    <section class="section projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Hospital Website</h3>
+        <p>Full responsive hospital website with frontend + admin panel.</p>
+      </div>
+      <div class="project-card">
+        <h3>Dairy Management App</h3>
+        <p>Android app to manage milk data, payments, and SMS updates for farmers.</p>
+      </div>
+      <div class="project-card">
+        <h3>Job Portal</h3>
+        <p>Web-based portal for posting jobs and receiving applications from candidates.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>Contact</h2>
+      <p>Email: abhishek@example.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/abhishek</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Abhishek Darandale. All rights reserved.
+  </footer>
+</body>
+</html>
